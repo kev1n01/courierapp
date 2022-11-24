@@ -20,7 +20,11 @@ import android.widget.Toast;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import org.checkerframework.checker.units.qual.A;
+
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import desaroollo.udh.goflyy.adapters.AdapterDetailDelivery;
@@ -64,28 +68,32 @@ public class DetailDeliveryFragment extends Fragment {
         tvdvclientphone = view.findViewById(R.id.tvdvclientphone);
 
         spinner = view.findViewById(R.id.spinnerstatusdelivery);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getContext(),R.array.statuses,android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(adapter);
+        List<String> statuses = new ArrayList<>();
+        int positionStatusDeliverySelected=0;
+        statuses.add("no entregado");
+        statuses.add("entregado");
+        statuses.add("no recibido");
+        statuses.add("direccion incorrecta");
+        statuses.add("producto defectuoso");
+        spinner.setAdapter(new ArrayAdapter<>(getContext(), androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, statuses));
+        switch(status){
+            case "no entregado": positionStatusDeliverySelected = 0; break;
+            case "entregado": positionStatusDeliverySelected = 1; break;
+            case "no recibido": positionStatusDeliverySelected = 2; break;
+            case "direccion incorreta": positionStatusDeliverySelected = 3; break;
+            case "producto defectuoso": positionStatusDeliverySelected = 4; break;
+        }
+        spinner.setSelection(positionStatusDeliverySelected);
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                String newStatus = null;
-
-                switch(position){
-                    case 0: newStatus = "no entregado"; break;
-                    case 1: newStatus = "entregado";break;
-                    case 2: newStatus = "no recibido";break;
-                    case 3: newStatus = "direccion incorrecta";break;
-                    case 4: newStatus = "producto defectuoso";
-                }
+                    String statusselected = statuses.get(position);
                 Map<String, Object> delivery = new HashMap<>();
-                delivery.put("Status",newStatus);
+                delivery.put("Status",statusselected);
                 db.collection("deliveries").document(iddoc).update(delivery);
             }
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
-
             }
         });
 

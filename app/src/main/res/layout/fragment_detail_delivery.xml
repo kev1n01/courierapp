@@ -79,6 +79,13 @@
                 android:text="Estado"
                 android:textSize="15dp" />
 
+            <Spinner
+                android:id="@+id/spinnerstatusdelivery"
+                android:layout_width="240dp"
+                android:padding="5dip"
+                android:layout_marginHorizontal="0dp"
+                android:layout_height="wrap_content" />
+
             <TextView
                 android:id="@+id/tvdbstatus"
                 android:padding="5dip"
@@ -213,18 +220,4 @@
             android:layout_width="match_parent"
             android:layout_height="216dp" />
     </TableLayout>
-    <TextView
-        android:text="Selecciona para cambiar el estado de la entrega"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="600dp"
-        />
-    <Spinner
-        android:id="@+id/spinnerstatusdelivery"
-        android:background="@drawable/buttonyellow"
-        android:layout_width="match_parent"
-        android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="630dp"
-        android:layout_height="wrap_content" />
 </FrameLayout>

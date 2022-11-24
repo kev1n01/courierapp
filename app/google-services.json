@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "421093613295",
+    "project_id": "couriergofly",
+    "storage_bucket": "couriergofly.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:421093613295:android:68176bcde70945a5dc051a",
+        "android_client_info": {
+          "package_name": "desaroollo.udh.goflyy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "421093613295-tvr4r1huhuu3ikj52b4sk0qint3o5u73.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTlkKhh6445Oq0wnP5CO4J4lidj62Saew"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "421093613295-tvr4r1huhuu3ikj52b4sk0qint3o5u73.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

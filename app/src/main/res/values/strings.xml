@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Courier</string>
+    <string name="textlogin">Ingrese su credenciales para ingresar</string>
+    <string name="bienvenido">BIENVENIDO</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="statuses">
+        <item>no entregado</item>
+        <item>entregado</item>
+        <item>no recibido</item>
+        <item>direccion incorrecta</item>
+        <item>producto defectuoso</item>
+    </string-array>
+</resources>

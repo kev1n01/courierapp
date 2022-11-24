@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="1dp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="@color/grey_100"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rlrowlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvcodedelivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:paddingTop="4dp"
+            android:text="001"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnstatus"
+            android:layout_width="170dp"
+            android:allowClickWhenDisabled="true"
+            android:layout_height="37dp"
+            android:layout_marginStart="70dp"
+            android:backgroundTint="@color/teal_700"
+            android:text="Entregado"
+            android:textAllCaps="true"
+            android:textSize="5pt" />
+
+        <TextView
+            android:id="@+id/tvtotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="280dp"
+            android:paddingTop="4dp"
+            android:text="231"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

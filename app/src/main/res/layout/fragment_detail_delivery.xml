@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginTop="23dp"
+    android:layout_height="match_parent"
+    tools:context=".DetailDeliveryFragment">
+
+    <TableLayout
+        android:padding="10dp"
+        android:stretchColumns="1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:layout_width="420dp"
+            android:layout_height="wrap_content"
+            android:background="@color/grey"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:text="INFORMACION DE ENTREGA"
+            android:textSize="20dp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:background="@color/grey_100"
+                android:text="Direccion"
+                android:padding="5dip"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tvdbaddress"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:padding="5dip"
+                android:text="Jr. alameda 132"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:background="@color/grey_100"
+                android:text="Codigo"
+                android:padding="5dip"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tvdbcode"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="001"
+                android:padding="5dip"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="150dp"
+                android:padding="5dip"
+                android:layout_height="wrap_content"
+                android:background="@color/grey_100"
+                android:paddingStart="10dp"
+                android:text="Estado"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tvdbstatus"
+                android:padding="5dip"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="No Entregado"
+                android:textAllCaps="true"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="150dp"
+                android:padding="5dip"
+                android:layout_height="wrap_content"
+                android:background="@color/grey_100"
+                android:paddingStart="10dp"
+                android:text="Total"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tvdbtotal"
+                android:padding="5dip"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="S/. 2334" />
+        </TableRow>
+
+        <TextView
+            android:layout_width="420dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@color/grey"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:text="INFORMACION DEL CLIENTE"
+            android:textSize="20dp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:padding="5dip"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:background="@color/grey_100"
+                android:text="Nombres"
+                android:textSize="15dp" />
+
+            <TextView
+                android:padding="5dip"
+                android:id="@+id/tvdvclient"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Carlos muro"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="150dp"
+                android:padding="5dip"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:background="@color/grey_100"
+                android:text="Celular"
+                android:textSize="15dp" />
+
+            <TextView
+                android:padding="5dip"
+                android:id="@+id/tvdvclientphone"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="944122342"/>
+
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:padding="10dp"
+        android:stretchColumns="1">
+
+        <TextView
+            android:background="@color/grey"
+            android:text="LISTA DE PRODUCTOS"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TableRow tools:ignore="UselessParent">
+
+            <TextView
+                android:width="190dp"
+                android:background="@color/grey_100"
+                android:padding="5dip"
+                android:paddingStart="20dp"
+                android:text="Descripcion" />
+
+            <TextView
+                android:layout_marginStart="1dp"
+                android:width="60dp"
+                android:background="@color/grey_100"
+                android:padding="5dip"
+                android:text="Cantidad"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_marginStart="1dp"
+                android:width="85dp"
+                android:background="@color/grey_100"
+                android:padding="5dip"
+                android:text="Precio"
+                android:textAlignment="center" />
+        </TableRow>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvtableproducts"
+            android:layout_width="match_parent"
+            android:layout_height="216dp" />
+    </TableLayout>
+    <TextView
+        android:text="Selecciona para cambiar el estado de la entrega"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="600dp"
+        />
+    <Spinner
+        android:id="@+id/spinnerstatusdelivery"
+        android:background="@drawable/buttonyellow"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="630dp"
+        android:layout_height="wrap_content" />
+</FrameLayout>
